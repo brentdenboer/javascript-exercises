@@ -1,11 +1,11 @@
-const fibonacci = function(countArg) {
-    // checks argument's type and makes sure we use 
+const fibonacci = (countArg) => {
+    // checks argument's type and makes sure we use
     // a number throughout rest of function.
-    let count
-    if (typeof countArg !== 'number') {
-        count = parseInt(countArg)
+    let count;
+    if (typeof countArg !== "number") {
+        count = Number.parseInt(countArg);
     } else {
-        count = countArg
+        count = countArg;
     }
 
     if (count < 0) return "OOPS";
@@ -15,13 +15,12 @@ const fibonacci = function(countArg) {
     let secondPrev = 0;
 
     for (let i = 2; i <= count; i++) {
-        let current = firstPrev + secondPrev;
+        const current = firstPrev + secondPrev;
         secondPrev = firstPrev;
         firstPrev = current;
     }
 
     return firstPrev;
-
 };
 
 // Another way to do it is by using an iterative approach with an array containing two values, 0 and 1.
