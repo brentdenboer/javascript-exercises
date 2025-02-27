@@ -1,13 +1,13 @@
 const repeatString = (string, num) => {
-    if (num < 0) return 'ERROR'
+  if (num < 0) return "ERROR";
 
-    let newString = ""
+  let newString = "";
 
-    for (let i = 0; num > i; i++) {
-        newString += string
-    }
+  for (let i = 0; num > i; i++) {
+    newString += string;
+  }
 
-    return newString
+  return newString;
 };
 
 // Do not edit below this line
