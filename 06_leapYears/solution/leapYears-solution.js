@@ -5,9 +5,8 @@ const leapYears = (year) => {
 
   if (isYearDivisibleByFour && (!isCentury || isYearDivisibleByFourHundred)) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 module.exports = leapYears;
